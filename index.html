@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PayMe</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+
+
+    <div class="show-log">
+        <p class="welcome">Log in to get started</p>
+        <button class="login-start">LOG IN</button>
+    </div>
+    <div class="login">
+        <div class="closeBtn">
+        </div>
+        <div class="login__text">
+            <img class="login__img" src="profile.png" alt="" width=100" height="100">
+            <h3 class="login__title">LOG IN </h3>
+            <form class="login__form">
+                <input class="login__usr usr-form" type="text" name="user" placeholder="Username">
+                <!-- <span class="usr-span error">jjjjjj</span> -->
+                <input class="login__pin usr-form" type="text" name="pin" maxlength="4" minlength="4"
+                    placeholder="Password">
+                <!-- <span class="pin-span error">jjjjjkkj</span> -->
+                <button class="login__btn">Submit</button>
+
+            </form>
+        </div>
+    </div>
+    <div class="shadow hidden"></div>
+    <div class="app container">
+        <div class="header">
+            <h1 class="title">Pay<span class="title__part">me</span> </h1>
+            <p class="label-welcome">Welcome back</p>
+            <button class="login-start">LOG IN</button>
+        </div>
+
+        <div class="balance">
+            <div>
+                <p class="balance-label ">Currant balance</p>
+
+                <ul class="balance-list">
+                    <ol class="currant-label type-balance">Currant balance</ol>
+                    <ol class="out-label type-balance">Outcome</ol>
+                    <ol class="in-label type-balance">Income</ol>
+                </ul>
+
+                <p class="balance-date">
+                    <span class="date"> 05/11/2020</span>
+                </p>
+            </div>
+            <p class="timer date">0:00</p>
+            <p class="balance-value">000€</p>
+
+        </div>
+
+        <div class="workplace">
+            <div class="manage">
+                <div class="movements">
+                    <div class="movements__row">
+                        <div class="movements__type movements__type--deposit">2 deposit</div>
+                        <div class="movements__date">3 days ago</div>
+                        <div class="movements__value">4 000€</div>
+                    </div>
+                    <div class="movements__row">
+                        <div class="movements__type movements__type--withdrawal">
+                            1 withdrawal
+                        </div>
+                        <div class="movements__date">24/01/2037</div>
+                        <div class="movements__value">-378€</div>
+                    </div>
+                </div>
+                <div class="transfer">
+                    <h2 class="form-title">Transfer money</h2>
+                    <form class="form form--transfer">
+                        <input type="text" class="form__input form__input--to" />
+                        <label class="form__label">Transfer to</label>
+                        <input type="number" class="form__input form__input--amount" />
+                        <label class="form__label">Amount</label>
+                        <button class="form__btn form__btn--transfer">Next</button>
+                    </form>
+                </div>
+
+                <div class="display-loan">
+                    <h2 class="form-title">Request loan</h2>
+                    <form class="form form--loan">
+                        <input type="number" class="form__input form__input--loan-amount" />
+                        <label class="form__label form__label--loan">Amount</label>
+                        <button class="form__btn form__btn--loan">Next</button>
+                    </form>
+                </div>
+                <div class="close-acc">
+                    <h2 class="form-title">Close account</h2>
+                    <form class="form form--close">
+                        <input type="text" class="form__input form__input--user" />
+                        <label class="form__label">Confirm user</label>
+                        <input type="password" maxlength="6" class="form__input form__input--pin" />
+                        <label class="form__label">Confirm PIN</label>
+                        <button class="form__btn form__btn--close">&rarr;</button>
+                    </form>
+                </div>
+            </div>
+            <div class="services">
+                <div class="cards ser-list">
+                    <div class="cards-wrap ser-wrap ">
+                        <img class="services-img" src="2361220961578289013.svg" alt="" width="40">
+                        <p class="cards-text ser-text">My cards</p>
+                    </div>
+                </div>
+                <div class="transfers ser-list">
+                    <div class="transfers-wrap ser-wrap">
+                        <img class="services-img" src="5827414231558096341.svg" alt="" width="40">
+                        <p class="transfers-text ser-text">Transfer</p>
+                    </div>
+                </div>
+                <div class="cash ser-list">
+                    <div class="cash-wrap ser-wrap">
+                        <img class="services-img" src="18769250071600459981.svg" alt="" width="40">
+                        <p class="cash-text ser-text">Cash flow</p>
+                    </div>
+                </div>
+                <div class="loan ser-list">
+                    <div class="loan-wrap ser-wrap">
+                        <img class="services-img" src="16250965921637671507.svg" alt="" width="40">
+                        <p class="loan-text ser-text">Loan</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
